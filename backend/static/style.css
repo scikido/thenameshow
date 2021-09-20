@@ -94,6 +94,7 @@ footer {
   box-shadow: 1px 1px 10px -4px;
   border-radius: 10px;
   margin: 10px;
+  z-index: 0;
   /* place-self: left; */
 }
 .card1 {
@@ -114,4 +115,15 @@ img {
   position: relative;
   top: 29px;
   left: 324px;
+}
+.content::before {
+  content: "";
+  position: absolute;
+  height: 220px;
+  background: url(/contentintro.jpg) no-repeat center center/cover;
+  width: 787px;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 1.9;
 }

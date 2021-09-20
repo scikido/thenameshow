@@ -1,6 +1,13 @@
 import os
 from dotenv import load_dotenv
 load_dotenv()
-my_name= input('who tf are you? ')
+from flask import Flask , render_template
 
-print(f"hello {os.getenv('name')}")
+app=Flask(__name__)
+
+@app.route('/')
+def hello():
+    return render_template('index.html')
+
+if __name__=="__main__":
+    app.run()
