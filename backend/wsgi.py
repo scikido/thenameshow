@@ -1,2 +1,3 @@
-from flask import Flask, Blueprint
-app= Flask(__name__)
+from flask import Flask
+from app import main
+
