@@ -4,38 +4,143 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./media/react.png" type="image/x-icon" />
-    <link rel="stylesheet" href="./static/style.css" />
+    <link rel="shortcut icon" href="react.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Acme&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="../static/style.css" />
     <title>The Name Show</title>
   </head>
 
   <body>
-    <div id="container">
-      <nav id="navbar">
-        <h1 id="navbarname">The Name Show</h1>
-        <ul>
-          <li><a href="#blogs">Blogs</a></li>
-          <li><a href="#about">About</a></li>
-        </ul>
-      </nav>
-      <aside id="aside"><h2>Aside section for texts Qoutes</h2></aside>
-      <main id="main">
-        <div class="content">
-          <div class="intro">
-            <h1 id="introtext">Welcome</h1>
-          </div>
-        </div>
+    <div class="container">
+      <div class="main_ui">
+ 
+        <nav class="navbar">
+          <p class="webname">The Name Show</p>
 
-        <div class="card1"><h1>Card for blog 1</h1></div>
-        <div class="card2"><h1>Card for blog 2</h1></div>
-      </main>
-      <footer><h3>Footer</h3></footer>
+          <ul>
+          <li>
+            <a href="#"  id="session">Join A Session</a>
+        </li>
+              
+            <li>
+              <a href="#">Blogs</a>
+            </li>
+            <li>
+              <a href="#">Qoutes</a>
+            </li>
+          </ul>
+        
+          
+        </nav>
+
+   
+        <section class="top-container">
+          <header class="intropg">
+            <div class="article">
+
+              <h1> Welcome to <span > The Name Show</span></h1>
+              <p>Perfect destination for Blogs and awesome Qoutes</p>
+            </div>
+            </header>
+          <div class="qoute-box qoute-box-a">
+            <div class="glass">
+
+              <p class="textboxcontent">
+                “It’s fine to celebrate success but it is more important to heed the lessons of failure.”
+                
+                
+            </p>
+            <p class="texttitle"> — Bill Gates</p>
+            
+          </div>
+          </div>
+          <div class="qoute-box qoute-box-b">
+            <div class="glass">
+              <p class="textboxcontent">
+                “You may not realize it when it happens, but a kick in the teeth may be the best thing in the world for you.” 
+              </p>
+              <p class="texttitle">– Walt Disney</p>
+
+            </div>
+          </div>
+        </section>
+
+        <section class="boxes">
+         
+          <div class="box">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            
+            <div class="box2">
+
+              <div class="blogcontent">
+                <h2>01</h2>
+                <h3>Eureka<h3>
+                  <p>
+                    I've always had a thing against Landon Donovan. The tag of "best US soccer player of his generation" rang a bit hollow when you looked 
+                  </p>
+                  <a href="#">Read More</a>
+                </div>
+            </div>
+            </div>
+    
+            <div class="box">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              
+              <div class="box2">
+  
+                <div class="blogcontent">
+                  <h2>02</h2>
+                  <h3>My Home<h3>
+                    <p>
+                      
+                      If you’ve been keeping an eye on our instagram stories you’ll be aware that we’re now back at home after exactly one year and one week spent travelling full time. 
+                    </p>
+                    <a href="#">Read More</a>
+                  </div>
+              </div>
+              </div>
+      
+              <div class="box">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <div class="box2">
+    
+                  <div class="blogcontent">
+                    <h2>03</h2>
+                    <h3>Times Changin'<h3>
+                      <p>
+                        Major changes have recently occured in my life, both personally and professionally. We're approaching five years since the inception of this blog, and going
+                      </p>
+                      <a href="#">Read More</a>
+                    </div>
+                </div>
+                </div>
+        
+      
+          </div>
+        </section>
+
+
+        <footer>
+          <p>TheNameShow &copy; 2021    | All Rights reserved|</p>
+        </footer>
+      </div>
+    
     </div>
   </body>
 </html>
