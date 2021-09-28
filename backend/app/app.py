@@ -7,7 +7,7 @@ app=Flask(__name__)
 
 
 
-@app.route('/')
+@app.route('/',methods=['POST','GET'])
 def hello():
     return render_template('index.html')
  

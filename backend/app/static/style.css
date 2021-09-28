@@ -141,7 +141,7 @@ img {
   min-height: 333px;
   padding: 3rem;
   display: flex;
-  background: url(../media/contentintro.jpg);
+  background: url(contentintro.jpg);
   background-size: cover;
   background-position: center;
   flex-direction: column;
