@@ -1,146 +1,271 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="react.png" type="image/x-icon" />
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>The Name Show</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Acme&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../static/style.css" />
-    <title>The Name Show</title>
+    <link rel="stylesheet" href="/backend/static/bootstrap.min.css" />
+    <link rel="stylesheet" href="/backend/static/style.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
-    <div class="container">
-      <div class="main_ui">
- 
-        <nav class="navbar">
-          <p class="webname">The Name Show</p>
-
-          <ul>
-          <li>
-            <a href="#"  id="session">Join A Session</a>
-        </li>
-              
-            <li>
-              <a href="#">Blogs</a>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">The Name show</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./blog.html"
+                >Blogs</a
+              >
             </li>
-            <li>
-              <a href="#">Qoutes</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Join Session</a>
             </li>
           </ul>
-        
-          
-        </nav>
-
-   
-        <section class="top-container">
-          <header class="intropg">
-            <div class="article">
-
-              <h1> Welcome to <span > The Name Show</span></h1>
-              <p>Perfect destination for Blogs and awesome Qoutes</p>
-            </div>
-            </header>
-          <div class="qoute-box qoute-box-a">
-            <div class="glass">
-
-              <p class="textboxcontent">
-                “It’s fine to celebrate success but it is more important to heed the lessons of failure.”
-                
-                
-            </p>
-            <p class="texttitle"> — Bill Gates</p>
-            
-          </div>
-          </div>
-          <div class="qoute-box qoute-box-b">
-            <div class="glass">
-              <p class="textboxcontent">
-                “You may not realize it when it happens, but a kick in the teeth may be the best thing in the world for you.” 
-              </p>
-              <p class="texttitle">– Walt Disney</p>
-
-            </div>
-          </div>
-        </section>
-
-        <section class="boxes">
-         
-          <div class="box">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            
-            <div class="box2">
-
-              <div class="blogcontent">
-                <h2>01</h2>
-                <h3>Eureka<h3>
-                  <p>
-                    I've always had a thing against Landon Donovan. The tag of "best US soccer player of his generation" rang a bit hollow when you looked 
-                  </p>
-                  <a href="#">Read More</a>
-                </div>
-            </div>
-            </div>
-    
-            <div class="box">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              
-              <div class="box2">
-  
-                <div class="blogcontent">
-                  <h2>02</h2>
-                  <h3>My Home<h3>
-                    <p>
-                      
-                      If you’ve been keeping an eye on our instagram stories you’ll be aware that we’re now back at home after exactly one year and one week spent travelling full time. 
-                    </p>
-                    <a href="#">Read More</a>
-                  </div>
-              </div>
-              </div>
-      
-              <div class="box">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-
-                <div class="box2">
-    
-                  <div class="blogcontent">
-                    <h2>03</h2>
-                    <h3>Times Changin'<h3>
-                      <p>
-                        Major changes have recently occured in my life, both personally and professionally. We're approaching five years since the inception of this blog, and going
-                      </p>
-                      <a href="#">Read More</a>
-                    </div>
-                </div>
-                </div>
-        
-      
-          </div>
-        </section>
-
-
-        <footer>
-          <p>TheNameShow &copy; 2021    | All Rights reserved|</p>
-        </footer>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
       </div>
-    
+    </nav>
+    <div class="tm-home-img-container">
+      <img
+        src="/backend/media/img/contentintro.jpg"
+        alt="Image"
+        class="hidden-lg-up img-fluid"
+      />
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-xs-center">
+          <div class="intropg">
+            <h1 class="tm-gold-text tm-title">The Name show</h1>
+            <p class="tm-subtitle">
+              Welcome to TheNameShow , perfect destination for Awesome Qoutes
+              and Blogs
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <section class="tm-section">
+      <div class="container-fluid">
+        <h2 class="qoutesnav">Qoutes</h2>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+            <div class="tm-content-box">
+              <p class="tm-margin-b-20">
+                You make a choice: continue living your life feeling muddled in
+                this abyss of self-misunderstanding, or you find your identity
+                independent of it. You draw your own box.”
+              </p>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+            <div class="tm-content-box">
+              <p class="tm-margin-b-20">
+                “You define your own life. Don’t let other people write your
+                script.” — Oprah Winfrey
+              </p>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+            <div class="tm-content-box">
+              <p class="tm-margin-b-20">
+                “At the end of the day, whether or not those people are
+                comfortable with how you’re living your life doesn’t matter.
+                What matters is whether you’re comfortable with it.”
+              </p>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+            <div class="tm-content-box">
+              <p class="tm-margin-b-20">
+                “Do not allow people to dim your shine because they are blinded.
+                Tell them to put some sunglasses on.”
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- row -->
+
+        <div class="row tm-margin-t-big" style="margin: 1px; margin-top: 10px">
+          <h2 class="blognav">Blogs</h2>
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+            <div class="tm-2-col-left">
+              <h3 class="tm-gold-text tm-title">Edureka</h3>
+
+              <p>
+                In spite of my love affair with most team and individual sports,
+                I was never one to follow track and field with anything more
+                than a passing interest in the latest world record. I must admit
+                that the advent of the olympics didn't really strike much of a
+                chord with me, especially after one of the best football
+                tournaments ever in Euro 2008. How could you follow up all the
+                drama of the beautiful game and hope to fill the void that
+                exists after a major international tournament?
+              </p>
+              <p>
+                To me, the olympics has always been too many sports on at the
+                same time, which is quite confusing and distracting. Things like
+                swimming, sailing, shooting, gymnastics, tae kwon do, amateur
+                boxing, fencing, track cycling, 20km walkathon, water polo, etc
+                etc.. they just don't really resonate for some reason. Lack of
+                globally identifiable athletes? Difficulty to "watch-in-passing"
+                for people are not intimately familiar with the sport?
+              </p>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+            <div class="tm-2-col-right">
+              <div class="tm-2-rows-md-swap">
+                <div class="tm-overflow-auto row tm-2-rows-md-down-2"></div>
+
+                <div class="row tm-2-rows-md-down-1 tm-margin-t-mid">
+                  <div
+                    class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"
+                  >
+                    <h3 class="tm-gold-text tm-title tm-margin-b-30">
+                      Related Blogs
+                    </h3>
+                    <div class="media tm-related-post">
+                      <div class="media-body">
+                        <a href="#"
+                          ><h4
+                            class="media-heading tm-gold-text tm-margin-b-15"
+                          >
+                            Why Google Pixel Failed
+                          </h4></a
+                        >
+                        <p class="tm-small-font tm-media-description">
+                          Why Google Pixel failed: What happened wrong with
+                          Google Pixel ?
+                        </p>
+                      </div>
+                      <div class="media-left media-middle">
+                        <img
+                          class="media-object"
+                          src="/backend/media/img/tm-img-240x120-3.jpg"
+                          alt="Generic placeholder image"
+                        />
+                      </div>
+                    </div>
+                    <div class="media tm-related-post">
+                      <div class="media-body">
+                        <a href="#"
+                          ><h4
+                            class="media-heading tm-gold-text tm-margin-b-15"
+                          >
+                            Brighter Days Ahead
+                          </h4></a
+                        >
+                        <p class="tm-small-font tm-media-description">
+                          Brighter Days Ahead Tough times, these. Resolution of
+                          conflicts on many fronts helps, but more is to come.
+                        </p>
+                      </div>
+                      <div class="media-left media-middle">
+                        <a href="#">
+                          <img
+                            class="media-object"
+                            src="/backend/media/img/tm-img-240x120-1.jpg"
+                            alt="Generic placeholder image"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                    <div class="media tm-related-post">
+                      <div class="media-body">
+                        <a href="#"
+                          ><h4
+                            class="media-heading tm-gold-text tm-margin-b-15"
+                          >
+                            Good Point
+                          </h4></a
+                        >
+                        <p class="tm-small-font tm-media-description">
+                          Having a terrible morning all round today. Overworked
+                          and undervalued, I was sitting in the clinic and I
+                          locked myself...
+                        </p>
+                      </div>
+                      <div class="media-left media-middle">
+                        <a href="#">
+                          <img
+                            class="media-object"
+                            src="/backend/media/img/tm-img-100x100-5.jpg"
+                            alt="Generic placeholder image"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- row -->
+      </div>
+    </section>
+
+    <footer class="tm-footer">
+      <div class="container-fluid">
+        <div class="mainfoot">
+          <div class="row">
+            <div class="col-xs-12 tm-copyright-col">
+              <p class="tm-copyright-text">
+                Copyright &copy; 2021 TheNameShow |ALL RIGHTS RESERVED|
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
