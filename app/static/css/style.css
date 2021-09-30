@@ -13,35 +13,10 @@ a,
 button {
   transition: all 0.3s ease;
 }
-<<<<<<< HEAD:frontend/style.css
 a:hover,
 a:focus {
   text-decoration: none;
   outline: none;
-=======
-
-.intropg {
-  grid-area: intropg;
-  min-height: 333px;
-  padding: 3rem;
-  display: flex;
-  background: url(contentintro.jpg);
-  background-size: cover;
-  background-position: center;
-  flex-direction: column;
-  margin-left: 30px;
-  background-position-y: 42px;
-  background-repeat: no-repeat;
-  align-items: start;
-  width: 709px;
-  overflow: hidden;
-  justify-content: start;
-  box-shadow: var(--shadow);
-}
-/* #session {
-  color: rgb(51, 51, 51);
-  font-weight: bold;
->>>>>>> 8765ab4182265fc8ba54a8057ef7975e0105a830:app/static/style.css
 }
 .intropg h1 {
   background: linear-gradient(to right, hsl(0deg 0% 0%), hsl(213deg 100% 75%));
@@ -97,15 +72,6 @@ h2 {
   border-radius: 6px;
   color: black;
   padding: 10px 40px;
-}
-
-.nav-item.active .nav-link,
-.nav-link:hover,
-.nav-link:focus {
-  color: rgb(53, 53, 53);
-}
-*/ .tm-gold-text {
-  color: #575550;
 }
 
 .tm-section {
@@ -408,30 +374,6 @@ p {
     right: 0;
     top: 21px;
     z-index: 1000;
-  }
-  #tmNavbar .navbar-nav .nav-item {
-    float: none;
-  }
-  #tmNavbar .navbar-nav .nav-link {
-    padding: 10px 35px;
-  }
-  #tmNavbar {
-    background: white;
-    border-radius: 6px;
-  }
-  #tmNavbar .navbar-nav .nav-item + .nav-item {
-    margin-left: 0;
-  }
-  .navbar-toggler {
-    background: white;
-    border-color: #cc9900;
-    color: #cc9900;
-    display: block;
-    margin-left: auto;
-    margin-right: 0;
-  }
-  .navbar-toggler:focus {
-    outline: none;
   }
   .tm-content-box {
     margin-bottom: 50px;
