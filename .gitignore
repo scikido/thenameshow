@@ -1,2 +1,2 @@
 TheNameShow
-*.pyc
+__pycache__/
