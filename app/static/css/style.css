@@ -1,7 +1,6 @@
 body {
   color: #110f0f;
-  font-family: "Acme";
-
+  font-family: "Vollkorn", serif;
   font-size: 18px;
   font-weight: 300;
   overflow-x: hidden;
@@ -558,4 +557,73 @@ p {
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+#hamnav {
+  width: 100%;
+  background: rgb(0, 0, 0);
+  z-index: 100;
+}
+#hamnav h2 {
+  color: white;
+  position: absolute;
+  top: 7px;
+  right: 77px;
+}
+
+#hamitems {
+  display: flex;
+}
+#hamitems a {
+  padding: 11px;
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+#hamitems a:hover {
+  color: rgb(196, 196, 196);
+}
+
+#hamnav label,
+#hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  #hamitems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #333;
+  }
+  #hamnav h2 {
+    color: white;
+    position: absolute;
+    top: 10px;
+    left: 100px;
+  }
+  #hamnav label {
+    display: inline-block;
+    margin-top: 9px;
+    margin-left: 11px;
+    color: white;
+    background: #0c0201;
+    font-style: normal;
+    font-size: 1.3em;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #hamitems {
+    display: none;
+  }
+  #hamnav input:checked ~ #hamitems {
+    display: block;
+  }
+}
+
+#hamnav {
+  position: sticky;
+  top: 0;
 }
