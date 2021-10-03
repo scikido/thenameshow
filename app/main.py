@@ -12,7 +12,7 @@ def hello():
     return render_template('index.html')
 
 
-@app.route('/blog.html')
+@app.route('/blog')
 def login():
     return render_template('blog.html')
 
