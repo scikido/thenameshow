@@ -1,7 +1,6 @@
 body {
   color: #110f0f;
-  font-family: "Acme";
-
+  font-family: "Vollkorn", serif;
   font-size: 18px;
   font-weight: 300;
   overflow-x: hidden;
@@ -44,6 +43,66 @@ h2 {
   font-weight: 300;
 }
 
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hamburger {
+  display: none;
+}
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #ffffff;
+}
+@media only screen and (max-width: 768px) {
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(245, 244, 244, 0.05);
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
 .container-fluid {
   margin-left: auto;
   margin-right: auto;
@@ -66,12 +125,6 @@ h2 {
 
 .tm-main-nav {
   font-size: 1.2rem;
-}
-
-.navbar-nav .nav-link {
-  border-radius: 6px;
-  color: black;
-  padding: 10px 40px;
 }
 
 .tm-section {
@@ -504,4 +557,73 @@ p {
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+#hamnav {
+  width: 100%;
+  background: rgb(0, 0, 0);
+  z-index: 100;
+}
+#hamnav h2 {
+  color: white;
+  position: absolute;
+  top: 7px;
+  right: 77px;
+}
+
+#hamitems {
+  display: flex;
+}
+#hamitems a {
+  padding: 11px;
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+#hamitems a:hover {
+  color: rgb(196, 196, 196);
+}
+
+#hamnav label,
+#hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  #hamitems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #333;
+  }
+  #hamnav h2 {
+    color: white;
+    position: absolute;
+    top: 10px;
+    left: 100px;
+  }
+  #hamnav label {
+    display: inline-block;
+    margin-top: 9px;
+    margin-left: 11px;
+    color: white;
+    background: #0c0201;
+    font-style: normal;
+    font-size: 1.3em;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #hamitems {
+    display: none;
+  }
+  #hamnav input:checked ~ #hamitems {
+    display: block;
+  }
+}
+
+#hamnav {
+  position: sticky;
+  top: 0;
 }
