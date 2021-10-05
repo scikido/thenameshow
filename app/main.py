@@ -16,7 +16,9 @@ def hello():
 def login():
     return render_template('blog.html')
 
-
+@app.route('/quotes')
+def quotes():
+    return render_template('quotes.html')
 def logout():
     pass
 
