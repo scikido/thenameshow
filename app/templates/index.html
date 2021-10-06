@@ -59,43 +59,49 @@
       <div class="container-fluid">
         <h2 class="qoutesnav">Quotes</h2>
         <div class="row">
-          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-            <div class="tm-content-box">
-              <p class="tm-margin-b-20">
-                You make a choice: continue living your life feeling muddled in
-                this abyss of self-misunderstanding, or you find your identity
-                independent of it. You draw your own box.”
-              </p>
+          <section id="marquee">
+            <div class="container3">
+              <div class="pic-container">
+                <div class="pic">
+                  <p>
+                    You make a choice: continue living your life feeling muddled
+                    in this abyss of self-misunderstanding, or you find your
+                    identity independent of it. You draw your own box.”
+                  </p>
+                </div>
+                <div class="pic">
+                  <p>
+                    You make a choice: continue living your life feeling muddled
+                    in this abyss of self-misunderstanding, or you find your
+                    identity independent of it. You draw your own box.”
+                  </p>
+                </div>
+                <div class="pic">
+                  <p>
+                    You make a choice: continue living your life feeling muddled
+                    in this abyss of self-misunderstanding, or you find your
+                    identity independent of it. You draw your own box.”
+                  </p>
+                </div>
+                <div class="pic">
+                  <p>
+                    You make a choice: continue living your life feeling muddled
+                    in this abyss of self-misunderstanding, or you find your
+                    identity independent of it. You draw your own box.”
+                  </p>
+                </div>
+                <div class="pic">
+                  <p>
+                    You make a choice: continue living your life feeling muddled
+                    in this abyss of self-misunderstanding, or you find your
+                    identity independent of it. You draw your own box.”
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-
-          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-            <div class="tm-content-box">
-              <p class="tm-margin-b-20">
-                “You define your own life. Don’t let other people write your
-                script.” — Oprah Winfrey
-              </p>
-            </div>
-          </div>
-
-          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-            <div class="tm-content-box">
-              <p class="tm-margin-b-20">
-                “At the end of the day, whether or not those people are
-                comfortable with how you’re living your life doesn’t matter.
-                What matters is whether you’re comfortable with it.”
-              </p>
-            </div>
-          </div>
-
-          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-            <div class="tm-content-box">
-              <p class="tm-margin-b-20">
-                “From Discord to WhatsApp , It's been a long journey,  My friend💝”
-              </p>
-            </div>
-          </div>
+          </section>
         </div>
+
         <!-- row -->
 
         <div class="row tm-margin-t-big" style="margin: 1px; margin-top: 10px">
@@ -234,5 +240,21 @@
     </footer>
 
     <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
+    <script>
+      const root = document.documentElement;
+      const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue(
+        "--marquee-elements-displayed"
+      );
+      const marqueeContent = document.querySelector("ul.marquee-content");
+
+      root.style.setProperty(
+        "--marquee-elements",
+        marqueeContent.children.length
+      );
+
+      for (let i = 0; i < marqueeElementsDisplayed; i++) {
+        marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
+      }
+    </script>
   </body>
 </html>
