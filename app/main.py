@@ -2,10 +2,10 @@ import os
 from dotenv import load_dotenv
 from flask_login import LoginManager , login_user, logout_user , login_required
 
+
 from flask import Flask , render_template , session
 load_dotenv()
 app=Flask(__name__)
-
 
 @app.route('/')
 def hello():
