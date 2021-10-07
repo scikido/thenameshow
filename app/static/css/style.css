@@ -646,8 +646,20 @@ p {
   /* border: 2px solid black; */
   height: 300px;
   padding: 2px 2px;
-  animation: marquee 13s infinite linear;
+  
+  animation: marquee 17s infinite linear;
+
+
 }
+#marquee .pic-container:hover {
+
+  
+  animation: marquee 17s infinite linear;
+  animation-play-state: paused;
+
+
+}
+
 
 #marquee .pic-container .pic {
   flex-basis: 20%;
@@ -691,7 +703,7 @@ p {
 
 @keyframes marquee {
   0% {
-    transform: translateX(100%);
+    transform: translateX(0)
   }
   100% {
     transform: translateX(-100%);
@@ -701,7 +713,7 @@ p {
 @media (max-width: 1024px) {
   @keyframes marquee {
     0% {
-      transform: translateX(100%);
+      transform: translateX(0);
     }
     100% {
       transform: translateX(-110%);
@@ -712,10 +724,12 @@ p {
 @media (max-width: 768px) {
   @keyframes marquee {
     0% {
-      transform: translateX(100%);
+      transform: translateX(0);
     }
     100% {
       transform: translateX(-100%);
     }
   }
 }
+
+
