@@ -646,41 +646,37 @@ p {
   /* border: 2px solid black; */
   height: 300px;
   padding: 2px 2px;
-  animation: marquee 13s infinite linear;
+  animation: marquee 20s infinite linear;
+}
+#marquee .pic-container:hover {
+  animation: marquee 20s infinite linear;
+  animation-play-state: paused;
 }
 
 #marquee .pic-container .pic {
-  flex-basis: 20%;
+  flex-basis: 15%;
   padding: 10px;
-  /* padding-left: 3px; */
-  /* padding-right: 3px; */
+
   flex-shrink: 0;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   display: flex;
+  width: 100px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 10px 37px;
 }
 
-/* #marquee img {
-  width: 100%;
-  object-fit: cover;
-  border: 1px solid rgba(238, 231, 231, 0.9);
-} */
-
 @media (max-width: 1024px) {
   #marquee .pic-container .pic {
-    flex-basis: 33.33%;
-    border: 2px solid black;
-    padding: 10px 10px;
-    margin: 8px 25px;
+    flex-basis: 18.33%;
+    margin: 17px 8px;
   }
 }
 
 @media (max-width: 768px) {
   #marquee .pic-container .pic {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -691,7 +687,7 @@ p {
 
 @keyframes marquee {
   0% {
-    transform: translateX(100%);
+    transform: translateX(0);
   }
   100% {
     transform: translateX(-100%);
@@ -701,7 +697,7 @@ p {
 @media (max-width: 1024px) {
   @keyframes marquee {
     0% {
-      transform: translateX(100%);
+      transform: translateX(0);
     }
     100% {
       transform: translateX(-110%);
@@ -712,10 +708,41 @@ p {
 @media (max-width: 768px) {
   @keyframes marquee {
     0% {
-      transform: translateX(100%);
+      transform: translateX(0);
     }
     100% {
       transform: translateX(-100%);
     }
   }
+}
+
+.pic .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  height: 196px;
+  width: 270px;
+  padding: 10px;
+  font-family: "Slabo 27px", serif;
+}
+.pic .card h5 {
+  position: absolute;
+  bottom: 4px;
+  right: 12px;
+}
+
+.pic .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.quoteslink {
+  padding: 11px;
+  margin-left: 20px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  text-align: center;
+}
+
+a.quoteslink:hover {
+  color: rgb(46, 46, 46);
 }
