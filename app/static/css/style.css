@@ -652,10 +652,6 @@ p {
   animation: marquee 20s infinite linear;
   animation-play-state: paused;
 }
-#marquee .pic-container:hover {
-  animation: marquee 17s infinite linear;
-  animation-play-state: paused;
-}
 
 #marquee .pic-container .pic {
   flex-basis: 15%;
