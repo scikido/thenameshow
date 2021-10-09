@@ -4,6 +4,9 @@ html {
   -webkit-font-smoothing: antialiased;
   text-decoration: none;
 }
+html::-webkit-scrollbar {
+  color: black;
+}
 header {
   width: 90%;
   max-width: 1240px;
