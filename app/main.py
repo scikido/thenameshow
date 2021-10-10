@@ -15,7 +15,7 @@ def hello():
 
 
 
-@app.route('/blog')
+@app.route('/blogs')
 def login():
     return render_template('blog.html')
 
