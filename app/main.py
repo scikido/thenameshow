@@ -9,7 +9,7 @@ from flask import Flask , render_template , session
 load_dotenv()
 app=Flask(__name__)
 
-cred_obj = firebase_admin.credentials.Certificate('static\the-name-show-firebase-adminsdk-ug7ak-7e8bf3907b.json')
+cred_obj = firebase_admin.credentials.Certificate('the-name-show-firebase-adminsdk-ug7ak-7e8bf3907b.json')
 
 flaskapp = firebase_admin.initialize_app(cred_obj, {
 	'databaseURL':'https://the-name-show-default-rtdb.firebaseio.com/'
