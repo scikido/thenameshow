@@ -1,0 +1,23 @@
+{
+    "Content":
+    {
+        "Poems":
+        {
+            "poem1":
+            {
+                "Title": "Quote",
+                "Body":"My demons come free, With the angels in me. How can you love just a part of me?"
+            },
+            "poem2":
+            {
+                "Title":"Silent Tears",
+                "Body":"Days will pass And turn to years And I'll always remember you, With silent tears."
+            }
+        },
+        "Blogs":
+        {
+            "Title":"Two Days of Freedom",
+            "Body":"Yash Going missing" 
+        }    
+    }
+}
