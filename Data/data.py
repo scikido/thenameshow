@@ -14,13 +14,14 @@ default_app = firebase_admin.initialize_app(cred_obj, {
 
 def setd():
     ref = db.reference("/")
-    with open("book_info.json", "r") as f:
+    with open("Data//blogload.json", "r") as f:
         file_contents = json.load(f)
     ref.set(file_contents)
 
-def retrive():
-    ref = db.reference("/Book1/Author/")
-    best_sellers = ref.get()
-    print(best_sellers)
+def retrive(path):
+    ref = db.reference(path)
+    content = ref.get()
+    print(content)
+  
 
-retrive()    
+   
