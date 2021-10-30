@@ -23,13 +23,6 @@ def retrive(path):
     return content
 
 
-def setd():
-    ref = db.reference("/")
-    with open("Data//blogload.json", "r") as f:
-        file_contents = json.load(f)
-    ref.set(file_contents)
-
-
 @app.route('/')
 def hello():
     return render_template('index.html')
