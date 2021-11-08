@@ -17,7 +17,12 @@
         "Blogs":
         {
             "Title":"Two Days of Freedom",
-            "Body":"Yash Going missing" 
+            "Body":
+            {
+                "para1":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita consectetur voluptas provident tenetur cumque dicta dignissimos commodi dolores, odio fuga neque blanditiis eveniet debitis quidem veniam. Obcaecati error neque quos provident vitae similique. Nam voluptatem blanditiis nisi eveniet repellat dignissimos vitae inventore nobis, modi voluptas tenetur consequuntur, ullam porro ea exercitationem dolor deserunt assumenda, recusandae commodi accusamus? Corrupti, earum laudantium enim, quisquam quibusdam eligendi, maiores distinctio sequi obcaecati non nostrum omnis? Necessitatibus inventore neque nemo! Eius dolorum temporibus, ut sapiente dignissimos suscipit, magni ipsa totam sequi, ipsum ea officia sunt iure quas odit consectetur nihil consequatur in? Maxime, ea. Culpa." ,
+                "para2":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita consectetur voluptas provident tenetur cumque dicta dignissimos commodi dolores, odio fuga neque blanditiis eveniet debitis quidem veniam. Obcaecati error neque quos provident vitae similique. Nam voluptatem blanditiis nisi eveniet repellat dignissimos vitae inventore nobis, modi voluptas tenetur consequuntur, ullam porro ea exercitationem dolor deserunt assumenda, recusandae commodi accusamus? Corrupti, earum laudantium enim, quisquam quibusdam eligendi, maiores distinctio sequi obcaecati non nostrum omnis? Necessitatibus inventore neque nemo! Eius dolorum temporibus, ut sapiente dignissimos suscipit, magni ipsa totam sequi, ipsum ea officia sunt iure quas odit consectetur nihil consequatur in? Maxime, ea. Culpa."
+            }
+            
         }    
     }
 }
