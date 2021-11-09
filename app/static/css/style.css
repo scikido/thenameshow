@@ -128,7 +128,7 @@ a {
 }
 
 .tm-section {
-  padding-top: 80px;
+  padding-top: 20px;
   padding-bottom: 100px;
 }
 
@@ -567,7 +567,7 @@ p {
 #hamnav h2 {
   color: white;
   position: absolute;
-  top: 7px;
+  top: 4px;
   right: 77px;
 }
 

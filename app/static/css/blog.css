@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Vollkorn", serif;
+}
+.blogcont {
+  width: 90;
+}
+.blog1title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 4px;
+  font-weight: 900;
+}
+.blog1para {
+  font-size: 1.2rem;
+}
