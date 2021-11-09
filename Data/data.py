@@ -23,5 +23,5 @@ def retrive(path):
     content = ref.get()
     print(content)
   
-
+setd()
    

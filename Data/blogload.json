@@ -16,8 +16,15 @@
         },
         "Blogs":
         {
-            "Title":"Two Days of Freedom",
-            "Body":"Yash Going missing" 
+            "Two Days of Freedom":
+            {
+                "Chapter1":
+                {
+                    "Title":"Yash Going Missing",
+                    "Body":"Aisha was cleaning kitchen until she realized that Yash has not woke up early today for his usual jogging at 6'o clock. She called Yash from kitchen, but no response. She assumed he must be tired today, so she started cooking breakfast."
+                    
+                }
+            }
         }    
     }
 }
