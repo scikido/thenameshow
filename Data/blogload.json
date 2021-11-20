@@ -5,8 +5,8 @@
         {
             "poem1":
             {
-                "Title": "Quote",
-                "Body":"My demons come free, With the angels in me. How can you love just a part of me?"
+                "Title": "My Scars",
+                "Body":"The wind was flowing, \nThe treess were talking, \nThe oceans were waving, \nThe clothes on the rope were chuckling, \nThe Thunder was roaring, \nThe rain was dancing, \nAnd the boy was happy thinking the \nMoon was singing along the stars as \nthe wind flowed across his scars. "
             },
             "poem2":
             {
@@ -25,6 +25,16 @@
                     
                 }
             }
+        },
+        "Musings":
+        {
+            "Author":"SciKido",
+            "1":"My demons come free, With the angels in me.\nHow can you love just a part of me?",
+            "2":"I just can't stop staring at the sky, \nquestioning myself were the stars still glitering when then world was being formed.",
+            "3":"I know I won't talk to you, \nBut never talking to you is the thing I will regret forever",
+            "4":"I know we were'nt perfect, \nBut just a little longer would've made us perfect.",
+            "5":"Life i svery Boring, \nif you make it!",
+            "6":"You have to learn to play fire with fire \nin accordance to live satisfyingly "
         }    
     }
 }
