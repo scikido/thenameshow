@@ -55,6 +55,10 @@ def blog():
 def quotes():
     return render_template('musings.html')
 
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
 @app.route('/blog1')
 def blogs():
     return render_template('blog_1.html')
@@ -65,4 +69,4 @@ def callback():
     pass
 
 #setd()
-#print(retrive("Content/Musings/1/"))
+#print(retrive("Content/Poems/poem1/Body/"))
