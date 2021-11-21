@@ -51,9 +51,9 @@ def hello():
 def blog():
     return render_template('blog.html')
 
-@app.route('/quotes')
+@app.route('/musings')
 def quotes():
-    return render_template('quotes.html')
+    return render_template('musings.html')
 
 @app.route('/blog1')
 def blogs():
