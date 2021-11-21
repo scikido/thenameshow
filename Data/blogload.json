@@ -6,7 +6,7 @@
             "poem1":
             {
                 "Title": "My Scars",
-                "Body":"The wind was flowing, \nThe treess were talking, \nThe oceans were waving, \nThe clothes on the rope were chuckling, \nThe Thunder was roaring, \nThe rain was dancing, \nAnd the boy was happy thinking the \nMoon was singing along the stars as \nthe wind flowed across his scars. "
+                "Body":["The wind was flowing" ,  "The trees were talking","The oceans were waving" , "The clothes on the rope were chuckling" , "The Thunder was roaring" , "The rain was dancing","And the boy was happy thinking the ","Moon was singing along the stars as", "the wind flowed across his scars "]
             },
             "poem2":
             {
