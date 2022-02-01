@@ -68,5 +68,5 @@ app.jinja_env.globals.update(retrive=retrive )
 def callback():
     pass
 
-#setd()
+setd()
 #print(retrive("Content/Poems/poem1/Body/"))
