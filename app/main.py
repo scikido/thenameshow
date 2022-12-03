@@ -27,14 +27,11 @@ flaskapp = firebase_admin.initialize_app(cred_obj, {
 	'databaseURL':'https://thenameshow-b5111-default-rtdb.firebaseio.com/'
 	})
 
-def playmusic(music):
-    pass
 
 def retrive(path):
     ref = db.reference(path)
     content = ref.get()
     return content
-
 
 def setd():
     ref = db.reference("/")
