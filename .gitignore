@@ -5,3 +5,8 @@ __pycache__/
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
+<<<<<<< Updated upstream
+=======
+app\nevermind.py
+
+>>>>>>> Stashed changes

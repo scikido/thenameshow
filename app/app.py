@@ -9,7 +9,7 @@ from pip._vendor import cachecontrol
 import google.auth.transport.requests
 
 app = Flask("Google Login App")
-app.secret_key = "CodeSpecialist.com"
+app.secret_key = "hey_this_is_secret_key"
 
 os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
 
@@ -28,7 +28,7 @@ flow = Flow.from_client_secrets_file(
 def login_is_required(function):
     def wrapper(*args, **kwargs):
         if "google_id" not in session:
-            return abort(401)  # Authorization required
+            return abort(401) 
         else:
             return function()
 
@@ -47,7 +47,7 @@ def callback():
     flow.fetch_token(authorization_response=request.url)
 
     if not session["state"] == request.args["state"]:
-        abort(500)  # State does not match!
+        abort(500) 
 
     credentials = flow.credentials
     request_session = requests.session()
