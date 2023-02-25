@@ -1,12 +1,13 @@
 TheNameShow
+nevermind
+data
 __pycache__/
 
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
-<<<<<<< Updated upstream
-=======
+.env
+
 app\nevermind.py
 
->>>>>>> Stashed changes

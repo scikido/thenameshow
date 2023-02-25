@@ -38,7 +38,7 @@ def retrive(path):
 
 def setd():
     ref = db.reference("/")
-    with open('Data/blogload.json', "r") as f:
+    with open('data/blogload.json', "r") as f:
         file_contents = json.load(f)
     ref.set(file_contents)
 
