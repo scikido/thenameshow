@@ -1,1 +1,9 @@
 TheNameShow
+__pycache__/
+Data
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+
+
