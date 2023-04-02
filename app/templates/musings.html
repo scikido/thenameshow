@@ -12,6 +12,8 @@
 </head>
 
 <body>
+
+    {% set cont= retrive("Content/Musings/1") %}
     <nav id="hamnav">
         <h2>TheNameShow</h2>
         <label for="hamburger">&#9776;</label>
@@ -28,8 +30,7 @@
         <div class="quote-box1">
             <div class="quote1">
                 <div class="blockquote1">
-                    "{{ retrive("Content/Musings/1") }}"
-                </div>
+                    {{ cont }} </div>
             </div>
             <div class="name1">
                 <p>{{ retrive("Content/Musings/Author/") }}</p>
